@@ -1,0 +1,55 @@
+/* .conatiner {
+  padding: 50px;
+} */
+
+
+@media screen and (min-width: 1440px) {
+
+  .headingimg {
+    text-align: center;
+  }
+
+  .heading {
+    text-align: center;
+    color: white;
+
+  }
+
+  .heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Inconsolata;
+  }
+
+  .heading p {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Inconsolata;
+    margin-top: 0;
+    color: hsl(245, 15%, 58%);
+  }
+}
+
+
+@media screen and (min-width:375px ){
+  .headingimg {
+    text-align: center;
+  }
+
+  .heading {
+    text-align: center;
+    color: white;
+
+  }
+  .heading h2{
+    font-weight: 500;
+    font-size: 23px;
+    font-family: Inconsolata;
+  }
+  .heading p{
+    font-family: 'Inconsolata';
+    font-size: 14px;
+    font-family: Inconsolata;
+    color: hsl(245, 15%, 58%);
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@97.3,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index2.html">
+
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body background="../conference-ticket-generator-main/assets/images/background-desktop.png">
+
+  <div class="container">
+    <!-- form start -->
+    <div id="first">
+      <div class="heading">
+        <div class="top-img">
+          <img src="../conference-ticket-generator-main/assets/images/logo-full.svg" alt="img">
+
+        </div>
+        <div class="head">
+          <p id="p1">Your Journey to Coding Conf 2025 Starts Here!</p>
+          <p id="p2">Secure your spot at next year's biggested coding conference.</p>
+        </div>
+      </div>
+      <div id="form-container">
+        <!-- <form action="" name="form" id="form"> -->
+        <label id="l1">Upload Avatar</label>
+        <div class="upload-sec">
+          <div class="sec1">
+            <div class="icon"><img src="../conference-ticket-generator-main/assets/images/icon-upload.svg" alt="">
+            </div>
+            <p>Drag and drop or click to upload</p>
+          </div>
+          <div class="sec2">
+            <input type="file" id="fileElem" accept="image/png, image/jpeg" onchange="Filevalidation()">
+            <p class="note"><img src="../conference-ticket-generator-main/assets/images/icon-info.svg" alt="">Upload
+              your photo (JPG or PNG, max size: 500KB).</p>
+            <p id="size"></p>
+            <span id="er"></span>
+          </div>
+        </div>
+        <label>Full Name</label>
+        <input type="text" id="fullname" required>
+        <span id="nameerror"></span>
+
+        <label>Email Address</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailerror"></span>
+
+        <label>GitHub Username</label>
+        <input type="text" id="git" required>
+        <span id="errorg"></span>
+        <button class="btn" onclick="submit()">Generate Ticket</button>
+        <!-- </form> -->
+      </div>
+    </div>
+
+    <!-- Form ends -->
+
+    <!-- ticket start -->
+    <div id="second-conatiner">
+      <div class="heading">
+        <div class="heading-img">
+          <img src="../conference-ticket-generator-main/assets/images/logo-full.svg" alt="">
+        </div>
+        <div class="desc">
+          <div class="desc1">
+            <h2 id="h2"></h2>
+          </div>
+          <div class="desc2">
+            <p id="p"></p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket">
+        <div class="display-ticket">
+          <div class="ticket-head">
+            <img src="../conference-ticket-generator-main/assets/images/logo-full.svg" alt="">
+            <p id="display-p"></p>
+          </div>
+          <div class="ticket-data">
+            <div class="avtar">
+              <img src="" alt="" id="avt">
+            </div>
+            <div id="detail">
+              <div class="sub-details">
+                <h4 id="ticket-h4"></h4>
+              </div>
+              <div class="sub-details2">
+                <p id="ticketp"><img src="../conference-ticket-generator-main/assets/images/icon-github.svg" alt=""></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="headingimg">
+        <img src="../conference-ticket-generator-main/assets/images/logo-full.svg" alt="">
+      </div>
+      <div class="heading2" id="heading2">
+        <h2></h2>
+        <p id="des">We’ve emailed your ticket to<span>Jonatan@email.com and will send update in the run up to the event</span>
+        </p>
+      </div>
+      <div class="ticket">
+        <div class="ticket-cont">
+          <div class="img">
+            <img src="../conference-ticket-generator-main/assets/images/logo-full.svg" alt="">
+            <p>Jan 31 2025 / Austin TX</p>
+          </div>
+          <div class="ticket-avt">
+            <div id="img" class="avt-img">
+              <img src="" alt="">
+            </div>
+            <div class="details" id="detail-view">
+
+
+            </div>
+          </div>
+        </div>
+        <img src="../conference-ticket-generator-main/assets/images/pattern-ticket.svg" alt="">
+      </div> -->
+    </div>
+
+    
+
+
+
+
+
+
+    <!-- Form ends -->
+
+    <!-- Generated tickets starts -->
+
+    Congrats, <!-- Full Name -->! Your ticket is ready.
+
+    We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
+
+    Coding Conf
+    Jan 31, 2025 / Austin, TX4
+
+    <!-- Generated tickets ends -->
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./index.js"></script>
+  </div>
+</body>
+
+</html>

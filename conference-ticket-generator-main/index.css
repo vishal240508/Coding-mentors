@@ -1,0 +1,409 @@
+*{
+  margin: 0;
+}
+*body :nth-child(2) {
+  position: relative;
+  bottom: 0;
+}
+.container{
+  padding: 50px;
+  height: auto;
+  background-image: url('../conference-ticket-generator-main/assets/images/pattern-lines.svg');
+}
+#second-conatiner{
+  /* margin-top: 50px; */
+}
+#form-container{
+  background-image: url(../conference-ticket-generator-main/assets/images/pattern-circle.svg);
+  background-repeat: no-repeat;
+  
+}
+#nameerror{
+  color: red;
+}
+#emailerror{
+  color: red;
+}
+#errorg{
+  color: red;
+}
+#er{
+  color: red;
+}
+/* #fileElem{
+  display: none;
+} */
+@media screen and (min-width: 1440px){
+  .top-img{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .head{
+    font-family: Inconsolata;
+    text-align: center;
+    color: white;
+  }
+  .upload-sec{
+    color: white;
+  }
+  #p1{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 10;
+    color: white;
+
+
+  }
+  #p2{
+    font-weight: 500;
+    font-size: 18px;
+    color:  hsl(245, 15%, 58%);
+    margin-top: 20px;
+
+  }
+  #form-container{
+    display: grid;
+    justify-content: center;
+    margin-top: 25px;
+    
+  }
+  #form{
+    display: grid;
+  }
+  #size{
+    margin: 0;
+  }
+  #l1{
+    margin-bottom: 15px;
+  }
+  .note{
+    color:hsl(245, 15%, 58%);
+    font-size: 9px;
+  }
+  .note img{
+    width: 15px;
+    height: 13px;
+    top: 3px;
+    margin-right: 6px;
+    position: relative;
+  }
+  
+  #fileElem{
+    border: 1px solid white;
+    border-style: dashed;
+    height: 125px;
+    width: 345px;
+    font-family: Inconsolata;
+    
+  }
+  label{
+    color: hsl(252, 6%, 83%);
+  }
+  .sec1{
+    left: 655px;
+    top: 302px !important;
+    position: absolute !important;
+  }
+  .sec1 p{
+    position: absolute;
+    top: 19px;
+  }
+  .icon{
+    margin-left: 80px;
+  }
+  .sec2{
+    margin-bottom: 20px;
+    position: relative;
+  }
+  #fullname{
+    border-style: dashed;
+    height: 35px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    margin-top:10px;
+    background-color: hsl(248, 70%, 10%);
+    font-family: Inconsolata;
+    color: white !important;
+    
+  }
+  input:visited{
+    border-style: dashed;
+  }
+  #email{
+    border-style: dashed;
+    height: 35px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: hsl(248, 70%, 10%);
+    font-family: Inconsolata;
+    color: white !important;
+    
+  }
+  #git{
+    border-style: dashed;
+    height: 35px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+   background-color: hsl(248, 70%, 10%);
+    font-family: Inconsolata;
+    color: white !important;
+    
+  }
+  .btn{
+    height: 40px;
+    border-radius: 10px;
+    background-color: hsl(7, 71%, 60%);
+    font-family: Inconsolata;
+    cursor: pointer;
+  }
+
+  /* ticket display */
+
+  #second-conatiner{
+    justify-content: center;
+    text-align: center;
+    background-image: url(../conference-ticket-generator-main/assets/images/pattern-lines.svg);
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+    /* margin-top: 70px; */
+  }
+  #h2{
+    color: white;
+    margin-top: 50px;
+    font-size: 55px;
+    font-weight: 700;
+    font-family: Inconsolata;
+  }
+  #p{
+    color: hsl(245, 15%, 58%);
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Inconsolata;
+  }
+
+  .ticket{
+    margin-top: 100px;
+  }
+
+  .display-ticket{
+    background-image:url('../conference-ticket-generator-main/assets/images/pattern-ticket.svg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 300px;
+    margin-left: 450px;
+
+  }
+  .ticket-head{
+    text-align: start;
+    margin-left: 33px;
+    /* margin-top: 44px; */
+  }
+  .ticket-head img{
+    width: 330px;
+    /* margin-left: 33px; */
+    margin-top: 30px !important;
+  }
+  .ticket-head p{
+    margin-left: 78px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff66;
+  }
+
+  .avtar{
+    text-align: left;
+    margin-top: 35px;
+    margin-left: 33px;
+  }
+  #avt{
+    width: 60px;
+    height: 60px;
+    text-align: left;
+  }
+  .ticket-data{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  #detail{
+    text-align: left;
+    margin-top: 26px;
+    margin-left: 25px;
+    color: #fff;
+    font-family: Inconsolata;
+    font-size: 31px;
+    font-weight: 500;
+  }
+  .sub-details{
+    margin-bottom: 10px;
+  }
+
+ 
+}
+
+
+@media screen and (min-width:375px ){
+  .top-img{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #p1{
+    color: white;
+    font-size: 29px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Inconsolata';
+    margin-bottom: 20px;
+  }
+  #p2{
+    color: hsl(245, 15%, 58%);
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Inconsolata';
+  }
+  #form-container{
+    display: grid;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  #l1{
+    color: hsl(245, 15%, 58%);
+  }
+  .sec1{
+    position: absolute;
+    top: 315px;
+    right: 110px;
+  }
+  .icon{
+    margin-left: 90px;
+  }
+  .sec1 p{
+    color: hsl(245, 15%, 58%);
+  }
+  .sec2{
+    position: relative;
+  }
+  #fileElem{
+    border-style: dashed;
+    border-color: white;
+    width: 320px;
+    height: 165px;
+  }
+  .note{
+    color: hsl(245, 15%, 58%);
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  label{
+    color: hsl(245, 15%, 58%);
+  }
+  #fullname{
+    background-color: hsl(248, 70%, 10%);
+    margin: 12px 0 12px 0;
+    height: 30px;
+    font-family: Inconsolata;
+    border-radius: 10px;
+    color: white !important ;
+    border-style: dashed;
+  }
+  #email{
+    background-color: hsl(248, 70%, 10%);
+    margin: 12px 0 12px 0;
+    height: 30px;
+    font-family: Inconsolata;
+    border-radius: 10px;
+    color: white !important ;
+    border-style: dashed;
+  }
+  #git{
+   background-color: hsl(248, 70%, 10%);
+    margin: 12px 0 12px 0;
+    height: 30px;
+    font-family: Inconsolata;
+    border-radius: 10px;
+    color: white !important ;
+    
+    
+  }
+  .btn{
+    height: 40px;
+    border-radius: 10px;
+    background-color: hsl(7, 71%, 60%);
+    font-family: Inconsolata;
+    margin-top: 10px;
+  }
+
+  /* Ticket display */
+
+  .display-ticket{
+    background-image: url(../conference-ticket-generator-main/assets/images/pattern-ticket.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px;
+  }
+  .heading{
+    justify-content: center;
+    text-align: center;
+  }
+  .heading-img{
+    margin-bottom: 30px;
+  }
+  .desc{
+    margin-bottom: 50px;
+  }
+  #h2{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 45px;
+    font-family: 'Inconsolata';
+  }
+  #p{
+    font-family: 'Inconsolata';
+    color: hsl(245, 15%, 58%);
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 10px;
+    
+  }
+  .ticket-head{
+    margin-bottom: 12px;
+  }
+  .ticket-head img{
+    margin-top: 16px;
+    margin-left: 20px;
+  }
+  #display-p{
+    margin-top: 10px;
+    margin-left: 60px;
+    color: #ffffff66;
+  }
+  .ticket-data{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+  }
+  #avt{
+    height: 50px;
+    width: 50px;
+  }
+  #detail{
+    margin-left: 24px;
+  }
+  #ticket-h4{
+    margin-bottom: 6px;
+    color: white;
+  }
+  #ticketp{
+    color: #ffffff66;
+  }
+
+  
+}
+
+
+
+
